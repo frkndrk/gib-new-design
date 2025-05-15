@@ -1,0 +1,208 @@
+.topbar {
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    color: rgb(12, 130, 143);
+    border-bottom: 1px solid rgb(0, 221, 245);
+  }
+  
+  .contTB {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .addresBar {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  .addresBar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addresBar ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    /* color: rgb(255, 183, 183); */
+/*     min-width: 200px; */
+  }
+  
+  .addresBar ul li:nth-child(1) {
+    margin-right: 50px;
+  }
+  
+  .addresBar ul li:nth-child(2) {
+    margin-left: -50px;
+  }
+
+  .language{
+    box-shadow: 2px 2px 5px rgb(12, 130, 143);
+    border-radius: 10px;
+    padding: 2px 10px;
+  }
+
+  .text{
+    font-family: "Ephesis", cursive;
+    font-size: 27px;
+  }
+  
+  .phoneNum {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(255, 183, 183); */
+  }
+  
+  .phoneNum span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(0deg);
+    margin-right: 5px;
+  }
+  
+  .phoneNum p {
+    /* color: rgb(255, 183, 183); */
+  }
+  
+  .icons {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    z-index: 20;
+  }
+  
+  .icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icons ul li {
+    display: flex;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .icons ul li:nth-child(3) {
+    margin-right: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 830px) {
+    .topbar {
+      height: 40px;
+    }
+  
+    .addresBar {
+      display: none;
+    }
+  
+    .phoneNum {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 1064px) {
+    .addresBar ul li:nth-child(2) {
+      margin-left: -50px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .contTB {
+      justify-content: center;
+    }
+  }
+
+  /* .search{
+    background-color: rgb(240, 43, 43);
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+  }
+
+  .activeSearch{
+    background-color: rgba(240, 43, 43, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+    transition: all 1s ease-in-out;
+  } */
+
+  /* .search {
+  background-color: rgb(240, 43, 43);
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 32px;
+  max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.activeSearch {
+  background-color: rgba(240, 43, 43, 0.5);
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 150px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+} */
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(12, 130, 143);
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 32px;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+
+.activeSearchContainer {
+  width: 200px;
+  background-color: rgba(240, 43, 43, 0.5);
+  transition: width 0.5s ease;
+}
+
+.searchInput {
+  flex: 1;
+  margin-left: 5px;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  color: #000;
+  outline: none;
+  opacity: 0;
+  width: 0;
+  transition: opacity 0.5s ease, width 0.5s ease;
+  display: none;
+}
+
+.showInput {
+  opacity: 1;
+  width: 100%;
+  display: inline;
+}

@@ -1,0 +1,570 @@
+/* Local container classes */
+.container {
+    width: 100%;
+    background-color: rgb(245, 245, 245);/* 
+    padding-right: 15px;
+    padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pb0 {
+    padding-bottom: 0px !important;
+}
+
+.bg-light {
+    background-color: rgb(245, 245, 245) !important;
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    padding: 6.25rem 0px;
+    width: 80%;
+}
+
+.separator-top {
+    /* Add any separator-top specific styles here */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Column classes */
+.col-sm-12, .col-md-6, .col-lg-6, .col-xl-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Media queries for responsive columns */
+@media (min-width: 576px) {
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Heading styles */
+.heading {
+    margin-bottom: 0.5em;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+    color: inherit;
+    margin-top: 0px;
+}
+
+.h3 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+
+.h5 {/* 
+    font-size: 1.5rem; */
+    line-height: 1.5em;
+    max-width: 99% !important;
+    margin-bottom: 0px;
+}
+
+.fs-22 {
+    font-size: 1.375rem !important;
+    line-height: 1.4em;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.change-middle-font-size {
+    /* Add styles for this class if needed */
+}
+
+/* Accordion components */
+.accordion-heading {
+    position: relative;
+}
+
+.separator {
+    display: block;
+    margin-bottom: 30px;
+    height: 6px;
+    background-color: rgb(12, 130, 143);
+    width: 150px;
+    border-radius: 3px;
+    border-width: 0px;
+    border-color: rgb(229, 229, 229);
+    border-style: solid;
+}
+
+.see-all {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    position: relative;
+    color: rgb(21, 21, 21);
+    transition: 0.2s;
+}
+
+.see-all a {
+    width: 180px;
+    display: block;
+    color: rgb(21, 21, 21);
+    font-size: 0.9rem;
+    padding: 15px;
+}
+
+.see-all::after {
+    transform: translate(0px, -50%);
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    display: block;
+    content: "";
+    font-size: 2.5rem;
+    font-family: icomoon;
+    transition: 0.2s;
+}
+
+.accordion-group-highlight {
+    overflow: visible;
+    border-radius: 0.25rem;
+}
+
+.accordion-group {
+    border-radius: 0.25rem;
+}
+
+.accordion {
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    position: relative;
+    transition: 0.2s;/* 
+    padding: 0.625rem; */
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    border-image: initial;
+    overflow-anchor: none;
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.accordion:hover{
+    background-color: rgba(148, 226, 234, 0.2);
+}
+
+.accordion.aos-init.aos-animate {
+    /* Styles for animated accordion */
+}
+
+.accordion-control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    padding: 1rem 2rem;
+}
+
+.accordion-control date {
+    display: block;
+    font-size: 0.8rem;
+    color: rgb(153, 153, 153);
+    padding-bottom: 15px;
+}
+
+.accordion-control > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    max-width: 100%;
+    font-size: .9rem;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.accordion-control span{
+    color:rgb(12, 130, 143);
+}
+
+/* .accordion-control::after {
+    content: "";
+    position: absolute;
+    width: 1em;
+    line-height: 1em;
+    right: 1rem;
+    top: 50%;
+    font-size: 1.5rem;
+    margin-top: -0.5em;
+    font-family: icomoon !important;
+    transition: 0.2s;
+} */
+
+.accordion-content {
+    /* overflow: hidden; */
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.accordion-content-wrapper {
+    padding: 0px 2rem 1rem;
+}
+
+.accordion-link {
+    position: relative;
+    color: rgb(21, 21, 21);
+    transition: 0.2s;
+    padding: 1.5rem 0rem !important;
+}
+
+.accordion-link--detail {
+    font-weight: 400;
+    color: rgb(220, 13, 21);
+}
+
+.accordion-link::after {
+    transform: translate(0px, -50%);
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+    display: block;
+    content: "";
+    font-size: 2.5rem;
+    font-family: icomoon;
+    transition: 0.2s;
+}
+
+.accordion-control h5 {
+    line-height: 1.5em;
+    max-width: 99% !important;
+}
+
+
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.pb-0, .py-0 {
+    padding-bottom: 0px !important;
+}
+
+.bg-light {
+    background-color: rgb(245, 245, 245) !important;
+
+    display: block;
+    position: relative;
+    margin: 0px auto;
+    padding: 6.25rem 0px;
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto, .col-xxl-1, .col-xxl-2, .col-xxl-3, .col-xxl-4, .col-xxl-5, .col-xxl-6, .col-xxl-7, .col-xxl-8, .col-xxl-9, .col-xxl-10, .col-xxl-11, .col-xxl-12, .col-xxl, .col-xxl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.list-box .accordion-heading {
+    position: relative;
+}
+
+.fs-22 {
+    font-size: 1.375rem !important;
+    line-height: 1.4em;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+    margin-bottom: 0.5em;
+}
+h3, .h3 {
+    font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 1em;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 1em;
+}
+
+.list-box .accordion-heading .separator {
+    display: block;
+    margin-bottom: 30px;
+    height: 6px;
+    background-color: red;
+    width: 80px;
+    border-radius: 3px;
+
+    border-width: 0px;
+    border-color: rgb(229, 229, 229);
+    border-style: solid;
+}
+
+.list-box .accordion-heading .see-all {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.see-all {
+    position: relative;
+    color: rgb(21, 21, 21);
+    transition: 0.2s;
+}
+
+.see-all a {
+    width: 180px;
+    display: block;
+    color: rgb(21, 21, 21);
+    font-size: 0.9rem;
+    padding: 15px;
+}
+
+a {
+    color: rgb(220, 13, 21);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.see-all::after {
+    transform: translate(0px, -50%);
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    display: block;
+    content: "";
+    font-size: 2.5rem;
+    font-family: icomoon;
+    transition: 0.2s;
+}
+
+.accordion-group-highlight {
+    overflow: visible;
+}
+
+.accordion-group {
+    border-radius: 0.25rem;
+}
+
+.list-box .accordion-group .accordion {
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+
+.accordion-group-highlight .accordion {
+    background: transparent;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.accordion {
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.2s;
+    padding: 0.625rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    border-image: initial;
+}
+
+.accordion {
+    overflow-anchor: none;
+}
+
+.list-box .accordion-group .accordion .accordion-control {
+    flex-direction: column;
+    align-items: start;
+}
+
+.accordion-control {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    padding: 1rem 2rem;
+}
+
+.list-box .accordion-group .accordion .accordion-control date {
+    display: block;
+    font-size: 0.8rem;
+    color: rgb(153, 153, 153);
+    padding-bottom: 15px;
+}
+
+a {
+    color: rgb(220, 13, 21);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.list-box .accordion-group .accordion .accordion-control > * {
+    font-size: 1.125rem;
+}
+
+.accordion-control h5 {
+    line-height: 1.5em;
+    max-width: 99% !important;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion-control > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    max-width: 100%;
+    font-size: 1rem;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+    margin-bottom: 0.5em;
+}
+
+h5, .h5 {
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 1em;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 1em;
+}
+
+.accordion-control::after {
+    content: "";
+    position: absolute;
+    width: 1em;
+    line-height: 1em;
+    right: 1rem;
+    top: 50%;
+    font-size: 1.5rem;
+    margin-top: -0.5em;
+    font-family: icomoon !important;
+    transition: 0.2s;
+}
+
+.accordion-content {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.accordion-content .accordion-content-wrapper {
+    padding: 0px 2rem 1rem;
+}
+
+.list-box .accordion-group .accordion .accordion-content .accordion-link {
+    position: relative;
+    color: rgb(21, 21, 21);
+    transition: 0.2s;
+    padding: 1.5rem 0rem !important;
+}
+
+a {
+    color: rgb(220, 13, 21);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.list-box .accordion-group .accordion .accordion-content .accordion-link strong.accordion-link--detail {
+    font-weight: 400;
+}
+
+strong, b {
+    color: rgb(220, 13, 21);
+    font-weight: 700;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+.list-box .accordion-group .accordion .accordion-content .accordion-link::after {
+    transform: translate(0px, -50%);
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+    display: block;
+    content: "";
+    font-size: 2.5rem;
+    font-family: icomoon;
+    transition: 0.2s;
+} */
